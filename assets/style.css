@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Google Fonts */
+/*@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light:400");*/
+/* Typeface */
+@import "font/opentype.css";
+/* Font Awesome */
+@import "font-awesome/css/font-awesome.min.css";
+/* Normalize.css */
+@import "library/normalize.css";
+/* Lity */
+@import "lity.min.css";
+
+/* Primary Style */
+
+*:focus {
+	outline: none;
+}
+
+body {
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+p {
+	text-transform: lowercase;
+}
+
+a {
+	color: #14121b;
+	text-decoration: none;
+}
+
+@media only all {
+	body {
+		background-color: #fff;
+	}
+
+	p {
+		position: absolute;
+		left: 33px;
+		bottom: 10px;
+	}
+
+	a::after {
+		content: ' \f040';
+		font-family: FontAwesome;
+	}
+}
